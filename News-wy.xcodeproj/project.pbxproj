@@ -11,6 +11,9 @@
 		88CDAC722AFBF41C006BDC7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDAC712AFBF41C006BDC7A /* ContentView.swift */; };
 		88CDAC742AFBF41F006BDC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CDAC732AFBF41F006BDC7A /* Assets.xcassets */; };
 		88CDAC772AFBF41F006BDC7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CDAC762AFBF41F006BDC7A /* Preview Assets.xcassets */; };
+		88CDAC7F2AFC079A006BDC7A /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 88CDAC7E2AFC079A006BDC7A /* GoogleMobileAds */; };
+		88CDAC822AFC099B006BDC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDAC812AFC099B006BDC7A /* AppDelegate.swift */; };
+		88CDAC862AFC2826006BDC7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDAC852AFC2826006BDC7A /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		88CDAC712AFBF41C006BDC7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88CDAC732AFBF41F006BDC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88CDAC762AFBF41F006BDC7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88CDAC802AFC084E006BDC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		88CDAC812AFC099B006BDC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88CDAC852AFC2826006BDC7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88CDAC7F2AFC079A006BDC7A /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +58,10 @@
 		88CDAC6E2AFBF41C006BDC7A /* News-wy */ = {
 			isa = PBXGroup;
 			children = (
+				88CDAC802AFC084E006BDC7A /* Info.plist */,
 				88CDAC6F2AFBF41C006BDC7A /* News_wyApp.swift */,
+				88CDAC812AFC099B006BDC7A /* AppDelegate.swift */,
+				88CDAC852AFC2826006BDC7A /* SceneDelegate.swift */,
 				88CDAC712AFBF41C006BDC7A /* ContentView.swift */,
 				88CDAC732AFBF41F006BDC7A /* Assets.xcassets */,
 				88CDAC752AFBF41F006BDC7A /* Preview Content */,
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = "News-wy";
+			packageProductDependencies = (
+				88CDAC7E2AFC079A006BDC7A /* GoogleMobileAds */,
+			);
 			productName = "News-wy";
 			productReference = 88CDAC6C2AFBF41C006BDC7A /* News-wy.app */;
 			productType = "com.apple.product-type.application";
@@ -104,13 +117,16 @@
 			};
 			buildConfigurationList = 88CDAC672AFBF41C006BDC7A /* Build configuration list for PBXProject "News-wy" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 88CDAC632AFBF41C006BDC7A;
+			packageReferences = (
+				88CDAC7D2AFC079A006BDC7A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = 88CDAC6D2AFBF41C006BDC7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88CDAC862AFC2826006BDC7A /* SceneDelegate.swift in Sources */,
+				88CDAC822AFC099B006BDC7A /* AppDelegate.swift in Sources */,
 				88CDAC722AFBF41C006BDC7A /* ContentView.swift in Sources */,
 				88CDAC702AFBF41C006BDC7A /* News_wyApp.swift in Sources */,
 			);
@@ -269,27 +287,36 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"News-wy/Preview Content\"";
 				DEVELOPMENT_TEAM = 5CNQ4G373R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "News-wy/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "News-wy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gadfly1981.News-wy";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gadfly1981.Newswy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -298,27 +325,36 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"News-wy/Preview Content\"";
 				DEVELOPMENT_TEAM = 5CNQ4G373R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "News-wy/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "News-wy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gadfly1981.News-wy";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gadfly1981.Newswy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88CDAC7D2AFC079A006BDC7A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88CDAC7E2AFC079A006BDC7A /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88CDAC7D2AFC079A006BDC7A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88CDAC642AFBF41C006BDC7A /* Project object */;
 }
