@@ -18,10 +18,12 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate, GADFullScreenContentDelega
     
     func requestAppOpenAd() {
         let request = GADRequest()
-        GADAppOpenAd.load(withAdUnitID: "ca-app-pub-3940256099942544/5662855259",
+        request.scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        GADAppOpenAd.load(withAdUnitID: "ca-app-pub-5753277101091282/4791259304",
                           request: request,
-                          orientation: UIInterfaceOrientation.portrait,
-                          completionHandler: { (appOpenAdIn, _) in
+                          orientation: UIInterfaceOrientation.portraitUpsideDown,
+                          completionHandler: { (appOpenAdIn, error) in
+            print(error?.localizedDescription)
             self.appOpenAd = appOpenAdIn
             let scenes = UIApplication.shared.connectedScenes
             let windowScene = scenes.first as? UIWindowScene

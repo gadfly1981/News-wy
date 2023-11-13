@@ -14,6 +14,15 @@
 		88CDAC7F2AFC079A006BDC7A /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 88CDAC7E2AFC079A006BDC7A /* GoogleMobileAds */; };
 		88CDAC822AFC099B006BDC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDAC812AFC099B006BDC7A /* AppDelegate.swift */; };
 		88CDAC862AFC2826006BDC7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDAC852AFC2826006BDC7A /* SceneDelegate.swift */; };
+		88CDAC882AFC75D7006BDC7A /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDAC872AFC75D7006BDC7A /* NewsResponse.swift */; };
+		88CDAC8E2AFC79CC006BDC7A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDAC8D2AFC79CC006BDC7A /* NetworkManager.swift */; };
+		88CDACB02AFF213F006BDC7A /* NewsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDACAF2AFF213F006BDC7A /* NewsType.swift */; };
+		88CDACB72B009D89006BDC7A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 88CDACB62B009D89006BDC7A /* SDWebImageSwiftUI */; };
+		88CDACB92B00C25C006BDC7A /* NewsTianType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDACB82B00C25C006BDC7A /* NewsTianType.swift */; };
+		88CDACBB2B00C771006BDC7A /* NewsTianResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDACBA2B00C771006BDC7A /* NewsTianResponse.swift */; };
+		88CDACBD2B00F46E006BDC7A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDACBC2B00F46E006BDC7A /* SearchBar.swift */; };
+		88CDACBF2B0214C8006BDC7A /* NewsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDACBE2B0214C8006BDC7A /* NewsItemView.swift */; };
+		88CDACC12B029AA1006BDC7A /* BannerAdDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDACC02B029AA1006BDC7A /* BannerAdDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +34,14 @@
 		88CDAC802AFC084E006BDC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		88CDAC812AFC099B006BDC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88CDAC852AFC2826006BDC7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		88CDAC872AFC75D7006BDC7A /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
+		88CDAC8D2AFC79CC006BDC7A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		88CDACAF2AFF213F006BDC7A /* NewsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsType.swift; sourceTree = "<group>"; };
+		88CDACB82B00C25C006BDC7A /* NewsTianType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTianType.swift; sourceTree = "<group>"; };
+		88CDACBA2B00C771006BDC7A /* NewsTianResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTianResponse.swift; sourceTree = "<group>"; };
+		88CDACBC2B00F46E006BDC7A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		88CDACBE2B0214C8006BDC7A /* NewsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemView.swift; sourceTree = "<group>"; };
+		88CDACC02B029AA1006BDC7A /* BannerAdDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88CDACB72B009D89006BDC7A /* SDWebImageSwiftUI in Frameworks */,
 				88CDAC7F2AFC079A006BDC7A /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +80,15 @@
 				88CDAC6F2AFBF41C006BDC7A /* News_wyApp.swift */,
 				88CDAC812AFC099B006BDC7A /* AppDelegate.swift */,
 				88CDAC852AFC2826006BDC7A /* SceneDelegate.swift */,
+				88CDACC02B029AA1006BDC7A /* BannerAdDelegate.swift */,
 				88CDAC712AFBF41C006BDC7A /* ContentView.swift */,
+				88CDACBE2B0214C8006BDC7A /* NewsItemView.swift */,
+				88CDACBC2B00F46E006BDC7A /* SearchBar.swift */,
+				88CDAC872AFC75D7006BDC7A /* NewsResponse.swift */,
+				88CDACBA2B00C771006BDC7A /* NewsTianResponse.swift */,
+				88CDACAF2AFF213F006BDC7A /* NewsType.swift */,
+				88CDACB82B00C25C006BDC7A /* NewsTianType.swift */,
+				88CDAC8D2AFC79CC006BDC7A /* NetworkManager.swift */,
 				88CDAC732AFBF41F006BDC7A /* Assets.xcassets */,
 				88CDAC752AFBF41F006BDC7A /* Preview Content */,
 			);
@@ -95,6 +121,7 @@
 			name = "News-wy";
 			packageProductDependencies = (
 				88CDAC7E2AFC079A006BDC7A /* GoogleMobileAds */,
+				88CDACB62B009D89006BDC7A /* SDWebImageSwiftUI */,
 			);
 			productName = "News-wy";
 			productReference = 88CDAC6C2AFBF41C006BDC7A /* News-wy.app */;
@@ -126,6 +153,7 @@
 			mainGroup = 88CDAC632AFBF41C006BDC7A;
 			packageReferences = (
 				88CDAC7D2AFC079A006BDC7A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				88CDACB52B009D89006BDC7A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 88CDAC6D2AFBF41C006BDC7A /* Products */;
 			projectDirPath = "";
@@ -153,9 +181,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88CDACB02AFF213F006BDC7A /* NewsType.swift in Sources */,
 				88CDAC862AFC2826006BDC7A /* SceneDelegate.swift in Sources */,
+				88CDACBB2B00C771006BDC7A /* NewsTianResponse.swift in Sources */,
+				88CDAC882AFC75D7006BDC7A /* NewsResponse.swift in Sources */,
+				88CDAC8E2AFC79CC006BDC7A /* NetworkManager.swift in Sources */,
 				88CDAC822AFC099B006BDC7A /* AppDelegate.swift in Sources */,
+				88CDACBF2B0214C8006BDC7A /* NewsItemView.swift in Sources */,
+				88CDACC12B029AA1006BDC7A /* BannerAdDelegate.swift in Sources */,
 				88CDAC722AFBF41C006BDC7A /* ContentView.swift in Sources */,
+				88CDACBD2B00F46E006BDC7A /* SearchBar.swift in Sources */,
+				88CDACB92B00C25C006BDC7A /* NewsTianType.swift in Sources */,
 				88CDAC702AFBF41C006BDC7A /* News_wyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,10 +349,10 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -351,10 +387,10 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -390,6 +426,14 @@
 				minimumVersion = 10.13.0;
 			};
 		};
+		88CDACB52B009D89006BDC7A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -397,6 +441,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 88CDAC7D2AFC079A006BDC7A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
+		};
+		88CDACB62B009D89006BDC7A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88CDACB52B009D89006BDC7A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
